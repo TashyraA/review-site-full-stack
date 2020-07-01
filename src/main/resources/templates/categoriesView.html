@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.Thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width=device=width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="./css/style.css">
+    <title class="title">Movie Categories</title>
 </head>
 <body>
+<h1 class="categoriesHeader">Movie Categories</h1>
+<h2 class="listOfCategories" th:each="category:${categories}"><a th:href="@{'/categories/'+${category.genre}}" th:text="${category.genre}">Category</a></h2>
 
+<footer>
+    &copy; Tashyra Adams 2020
+</footer>
 </body>
 </html>

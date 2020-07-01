@@ -1,0 +1,106 @@
+*{
+    font-family: sans-serif;
+    background: url(../images/movies.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rating {
+    position: absolute;
+    display: flex;
+    transform: rotateY(180deg);
+    margin-left: 10em;
+    margin-bottom: 5em;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: #101010;
+}
+
+.rating label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    color: gold;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 5);
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after{
+    opacity: 1;
+}
+
+p {
+    margin-top: 5em;
+    margin-right: 80em;
+    margin-left: 10em;
+}
+
+img {
+    margin-left: 10em;
+}
+
+a {
+    padding: 0em 2em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.reviewListLinkReview {
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.reviewDetailsTitle {
+    text-align: center;
+}
+
+.categoriesHeader {
+    text-align: center;
+}
+
+.listOfCategories {
+    margin-left: 5em;
+
+}
+
+.headerTitle {
+    text-align: center;
+}
+
+.reviewListHeading {
+    margin-left: 5em;
+}
+
+.reviewNavList {
+    margin-left: 5em;
+}
+
+footer {
+    margin-top: 30em;
+    color: whitesmoke;
+    padding: 1em 0;
+    text-align: center;
+}
