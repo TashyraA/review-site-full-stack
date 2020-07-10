@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.Thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device=width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Single Category</title>
+
+
 </head>
 <body>
 <header class="header">
@@ -14,7 +16,7 @@
     <h1 class="headerTitle" th:text="${category.genre}"></h1>
 </header>
 <section class="reviewList">
-    <h2 class="reviewListHeading">List of reviews</h2>
+    <h2 class="reviewListHeading">Here is list of our Reviews:</h2>
 
     <nav class="reviewNavList">
         <ul>
@@ -24,6 +26,7 @@
             </li>
         </ul>
     </nav>
+    </div>
 </section>
 <footer>
     &copy; Tashyra Adams 2020
